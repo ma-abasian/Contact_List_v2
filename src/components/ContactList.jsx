@@ -50,6 +50,14 @@ const ContactList = () => {
     );
   }
 
+  if (contacts){
+    return (
+        <p className="text-center text-slate-900 text-2xl font-medium py-32 bg-blue-300">
+          Your List is Empty
+        </p>
+    );
+  }
+
   return contacts.map(({ id, name, number }) => (
     <Contact
       key={id}
