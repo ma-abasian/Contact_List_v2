@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Contact from "./Contact.jsx";
 
-const CONTACTS_API = "http://localhost:3000/contacts";
+const CONTACTS_API = "http://localhost:3000/contactss";
 
 const ContactList = () => {
   const [contacts, setContacts] = useState([]);
@@ -50,7 +50,8 @@ const ContactList = () => {
     );
   }
 
-  if (contacts){
+  if (!contacts.length){
+    console.log(contacts.length)
     return (
         <p className="text-center text-slate-900 text-2xl font-medium py-32 bg-blue-300">
           Your List is Empty

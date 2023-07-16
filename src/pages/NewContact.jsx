@@ -12,7 +12,7 @@ export const NewContact = () => {
       await axios.post(CONTACTS_API, contact);
       navigate("/");
     } catch (error) {
-      alert("Can Not Edit Contact");
+      alert("Can Not Add Contact");
     }
   };
   return (
