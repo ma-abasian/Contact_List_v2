@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Contact from "./Contact.jsx";
 
-const CONTACTS_API = "http://localhost:3000/contactss";
+const CONTACTS_API = "http://localhost:3000/contacts";
 
 const ContactList = () => {
   const [contacts, setContacts] = useState([]);
